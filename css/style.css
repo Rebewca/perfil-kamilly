@@ -1,4 +1,15 @@
+/* Tema Dark*/
 :root, :root[data-theme='dark'] {
      --primary-color: #f0f0f0;
      --primary-bg-color: #111217;
+} 
+body{
+     background: var(--primary-bg-color);
+     color: var(--primary-color);/* cor geral dos textos*/
 }
+/* Tema Light*/
+:root[data-theme='light']{
+     --primary-color:#000; /* cor principal dos textos*/
+     --primary-bg-color:#f0f2f5;
+}
+
