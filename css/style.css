@@ -10,14 +10,66 @@
 :root, :root[data-theme='dark'] {
      --primary-color: #f0f0f0;
      --primary-bg-color: #111217;
-} 
+     --secondary-bg-color:#56575A;
+     --title-color:#f0f0f0;
+     --link-color:#8f8f8f;
+     --link-hover:#f0f0f0;/* link da cor */
+     --icon-color:#C7C8C9; /* shifth+ alt+ A( icon) */
+
+} /* Tema Light*/
+:root[data-theme='light']{
+     --primary-color:#0d0c09; /* cor principal dos textos*/
+     --primary-bg-color:#f0f2f5;
+
+     --secondary-bg-color:#C7C8C9;
+     --primary-border-color:#C7C8C9;
+     --secordary-border-color:#9a9a9c;
+
+     --title-color:#0b0b0f;
+     --link-color:#a3a2a2;
+     --link-hover:#0b0b0f;
+     --icon-color:#56575a;
+
+}
 body{
      background: var(--primary-bg-color);
      color: var(--primary-color);/* cor geral dos textos*/
+     font-family:'Playwrite', Tahoma, Geneva, Verdana, sans-serif;
 }
-/* Tema Light*/
-:root[data-theme='light']{
-     --primary-color:#000; /* cor principal dos textos*/
-     --primary-bg-color:#f0f2f5;
+/* resert css, uma padronização no meu navegador. */
+*{
+ margin: 0;
+ padding: 0; /* preenchimento, padronizar os elementos em ios e notebook*/
+ box-sizing: border-box; /* direcionamento das caixas */
+ vertical-align: baseline;/* alinhamento vertical da estrutura da pag. */
+ list-style: none; /*remover bolhinhas*/
+ scrollbar-width: thin;/* afinar a barra de rolagem */
+ scrollbar-color: var(--secondary-bg-color)transparent;
+}
+
+a{
+  text-decoration: none;
+  color: var(--link-color);
+}
+a:hover{
+     color: var(--link-hover);
+}
+i{
+color: var(--icon-color);
+}
+.header{
+  display: flex;
+  flex-flow: row wrap;  /* coloca o conteudo em linha e permite a quebra de linha. */
+  justify-content: space-between;/* os itens dentro container(caixa) flexivel serão distribuidas de maneira uniforme ao longo do eixo principal, com espaços iguais entre eles. */
+   align-items: center; /* alinhar conteudos da pag. */
+   width: 100%;
+   padding: 0.5rem 1rem;/* valor relativo  */
+   z-index: 2;/* responsavel da sobreposição */
+}
+
+.header-logo .logo{
+     width: 3.25rem;
+     height: 3.25rem;
+
 }
 
