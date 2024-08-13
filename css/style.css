@@ -72,4 +72,21 @@ color: var(--icon-color);
      height: 3.25rem;
 
 }
+#toggleTheme{
+       font-size: 1.5rem;/* tamanho da fonte */
+       color: var(--icon-color);
+       cursor: pointer; /* ali contem um link clicavel */
+       transition: ease-in-out .4s; /* transição de icones (uma lentidão quando o elemento surgir) */
 
+}
+.menu{
+     display: flex; /* uma caixa que se adapta e diversos tamanhos, transformando todos os filhos diretos em flex itens */
+     align-items: center;
+     background: var(--primary-bg-color);
+     gap: 1rem; /* espaço entre os itens de barras */
+}
+.menu-link{
+     display: flex;
+     align-items: center;
+     gap: .5rem;
+}
