@@ -12,6 +12,7 @@
      --primary-bg-color: #111217;
      --secondary-bg-color:#56575A;
      --title-color:#f0f0f0;
+     --primary-border-color:#C7C8C9;
      --link-color:#8f8f8f;
      --link-hover:#f0f0f0;/* link da cor */
      --icon-color:#C7C8C9; /* shifth+ alt+ A( icon) */
@@ -89,4 +90,27 @@ color: var(--icon-color);
      display: flex;
      align-items: center;
      gap: .5rem;
+}
+.menu-mobile{ /*  Ul uma lista não ordenada */
+     width: 100%;
+     position: fixed;
+     bottom: 0;/*  o valor funciona so com a posicao for position */
+     justify-content: space-between;
+     border-top: 1px solid var(--primary-border-color);
+}
+.menu-mobile .menu-link{
+     flex-direction: column; /* vai deixar os objetos em coluna */
+     justify-content: center;
+     padding: 0.5rem 1rem;
+
+}
+.menu-link.active .menu-icon,.menu-link.active .menu-text,.menu-link:hover .menu-icon,.menu-link:hover .menu-text{
+     color: var(--link-hover);    
+}
+.menu-icon, .menu-text{
+     color: var(--link-color);
+     font-weight: 600;
+}
+.menu-icon{
+     font-size: 1.5rem;
 }
