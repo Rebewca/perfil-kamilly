@@ -9,8 +9,9 @@
 /* Tema Dark*/
 :root, :root[data-theme='dark'] {
      --primary-color: #f0f0f0;
-     --primary-bg-color: #111217;
-     --secondary-bg-color:#56575A;
+     --primary-bg-color: #151516;;
+     
+     --secondary-bg-color:#1a1a1b;
      --title-color:#f0f0f0;
      --primary-border-color:#C7C8C9;
      --link-color:#8f8f8f;
@@ -19,7 +20,7 @@
 
 } /* Tema Light*/
 :root[data-theme='light']{
-     --primary-color:#0d0c09; /* cor principal dos textos*/
+     --primary-color:#1c1f20; /* cor principal dos textos*/
      --primary-bg-color:#f0f2f5;
 
      --secondary-bg-color:#C7C8C9;
@@ -38,6 +39,8 @@ body{
      font-family:'Playwrite', Tahoma, Geneva, Verdana, sans-serif;
 }
 /* resert css, uma padronização no meu navegador. */
+
+
 *{
  margin: 0;
  padding: 0; /* preenchimento, padronizar os elementos em ios e notebook*/
@@ -61,10 +64,10 @@ color: var(--icon-color);
 .header{
   display: flex;
   flex-flow: row wrap;  /* coloca o conteudo em linha e permite a quebra de linha. */
-  justify-content: space-between;/* os itens dentro container(caixa) flexivel serão distribuidas de maneira uniforme ao longo do eixo principal, com espaços iguais entre eles. */
+  justify-content: space-between; /* os itens dentro container(caixa) flexivel serão distribuidas de maneira uniforme ao longo do eixo principal, com espaços iguais entre eles. */
    align-items: center; /* alinhar conteudos da pag. */
    width: 100%;
-   padding: 0.5rem 1rem;/* valor relativo  */
+   padding: 0.5rem 1rem; /* valor relativo  */
    z-index: 2;/* responsavel da sobreposição */
 }
 
@@ -74,7 +77,7 @@ color: var(--icon-color);
 
 }
 #toggleTheme{
-       font-size: 1.5rem;/* tamanho da fonte */
+       font-size: 1.5rem; /* tamanho da fonte */
        color: var(--icon-color);
        cursor: pointer; /* ali contem um link clicavel */
        transition: ease-in-out .4s; /* transição de icones (uma lentidão quando o elemento surgir) */
@@ -94,7 +97,7 @@ color: var(--icon-color);
 .menu-mobile{ /*  Ul uma lista não ordenada */
      width: 100%;
      position: fixed;
-     bottom: 0;/*  o valor funciona so com a posicao for position */
+     bottom: 0; /*  o valor funciona so com a posicao for position */
      justify-content: space-between;
      border-top: 1px solid var(--primary-border-color);
 }
@@ -124,9 +127,12 @@ color: var(--icon-color);
 .menu-principal{
      gap: 1rem;
 }
-/*-------------  */
+/* Fim -------------  */
+
+
+
 /* CSS responsivo */
-@media(min-width: 768px){
+@media(min-width: 768px){ /* vai determinar o tamanho da largura ou comprimento da tela. */
      .header{
           position: fixed;
           border-bottom: 1px solid var(--primary-border-color);
@@ -139,3 +145,4 @@ color: var(--icon-color);
 .header-nav{
      display: flex;
 }
+
