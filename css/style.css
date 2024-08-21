@@ -76,17 +76,19 @@ color: var(--icon-color);
      height: 3.25rem;
 
 }
-.header-logo .logo2{
-     width: 6.25rem;
-     height: 1.25rem;
-     margin-left: 20px;
+.header-logo .logo3 {
+     width: 4rem;
+     height: 2rem;
+     margin-left: 10px;
      position: relative;
-     bottom: 10px;
+     bottom: 3px;
 }
 html[data-theme="light"] .logo {
     filter: invert(1);
 }
-
+html[data-theme='light'] .logo3 {
+     filter: invert(1); 
+}
 
 #toggleTheme{
        font-size: 1.5rem; /* tamanho da fonte */
@@ -150,11 +152,15 @@ html[data-theme="light"] .logo {
           border-bottom: 1px solid var(--primary-border-color);
           padding: 1rem 6rem;
      }
-}
-.nav-mobile{
-     display: none;
-}
-.header-nav{
-     display: flex;
+     .nav-mobile{
+          display: none;
+     }
+     .header-nav{
+          display: flex;
+     }
+
+     
+     
+
 }
 
