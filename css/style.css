@@ -11,7 +11,7 @@
      --primary-color: #f0f0f0;
      --primary-bg-color: #151516;;
      
-     --secondary-bg-color:#1a1a1b;
+     --secondary-bg-color:#f0f0f7;
      --title-color:#f0f0f0;
      --primary-border-color:#C7C8C9;
      --link-color:#8f8f8f;
@@ -143,8 +143,39 @@ html[data-theme='light'] .logo3 {
 }
 /* Fim -------------  */
 
-
-
+     .menu-social {
+          gap: 1rem;
+     }
+     .btn {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 0.62rem;
+          width: 100%;
+          background: transparent;
+          border-radius: 3rem;
+          color: var(--secordary-border-color);
+          border: none;
+          cursor: pointer;
+          padding: o.5rem 1.5rem;
+          transition: ease-in-out .3s;
+     }
+     .btn-primary {
+          border: 1px solid var(--secordary-border-color);
+     }
+     .btn:hover {
+          transform: scale(1.07);
+          transition: ease-in-out .3s;
+     }
+     .btn span, 
+     .btn i {
+          font-size: 1.25rem;
+          text-transform: uppercase;
+     }
+     
+     .btn-primary span {
+          color: var(--primary-color);
+     }
 /* CSS responsivo */
 @media(min-width: 768px){ /* vai determinar o tamanho da largura ou comprimento da tela. */
      .header{
