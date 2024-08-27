@@ -141,6 +141,7 @@ html[data-theme='light'] .logo3 {
 .menu-principal{
      gap: 1rem;
 }
+
 /* Fim -------------  */
 
      .menu-social {
@@ -157,7 +158,7 @@ html[data-theme='light'] .logo3 {
           color: var(--secordary-border-color);
           border: none;
           cursor: pointer;
-          padding: o.5rem 1.5rem;
+          padding: .5rem 1.5rem;
           transition: ease-in-out .3s;
      }
      .btn-primary {
@@ -176,6 +177,24 @@ html[data-theme='light'] .logo3 {
      .btn-primary span {
           color: var(--primary-color);
      }
+#home{
+     display: flex;
+     flex-direction: column;
+     gap: 2rem;
+}
+.main-content{
+     display: flex;
+     flex-direction: column;
+     gap: 1.5rem;
+}
+.video iframe{
+     width: 100%;
+     aspect-ratio: 16/9;
+}
+#home, .projetos, .sobre, .contato /* ainda não existe */{
+     padding: 5rem 5rem;
+
+}
 /* CSS responsivo */
 @media(min-width: 768px){ /* vai determinar o tamanho da largura ou comprimento da tela. */
      .header{
