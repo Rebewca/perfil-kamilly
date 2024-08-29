@@ -246,10 +246,6 @@ html[data-theme='light'] .logo3 {
 .card-button span{
      font-size: 1rem;
 }
-.projetos .btn{
-     width: ;
-     height: ;
-}
 /* CSS responsivo */
 @media(min-width: 768px){ /* vai determinar o tamanho da largura ou comprimento da tela. */
      .header{
