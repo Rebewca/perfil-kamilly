@@ -201,10 +201,9 @@ html[data-theme="light"] .logo3 {
   gap: 4rem;
 }
 .projeto-card {
-     flex-direction: column;
-     display: flex;
-     gap: 2rem;
-
+  flex-direction: column;
+  display: flex;
+  gap: 2rem;
 }
 .card-cover {
   width: 100%;
@@ -268,42 +267,41 @@ html[data-theme="light"] .logo3 {
     min-width: 30%;
   }
   h1 {
-     font-size: 5rem;
+    font-size: 5rem;
   }
   h2 {
-     font-size: 2rem;
+    font-size: 2rem;
   }
-  #home, .projetos, .sobre, .contato{
-     padding: 8rem 6rem 4rem 6rem;
+  #home,
+  .projetos,
+  .sobre,
+  .contato {
+    padding: 8rem 6rem 4rem 6rem;
   }
-  .main-content{
-     display: flex;
-     flex-direction: column;
-     align-items: flex-start;
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
   .contato {
-     padding: 6rem;
+    padding: 6rem;
   }
   .contato p {
-     width: 80%;
+    width: 80%;
   }
   footer {
-     margin: 0;
+    margin: 0;
   }
 } /* ---------fim resolução 768 */
 @media (min-width: 992px) {
-
-.projeto-card {
-     flex-direction: row;
-     
-}
-.card-reverse {
-     flex-direction: row-reverse;
-     justify-content: space-between;
-}
-.card-cover{
-     width: 55%;
-
-}
-  
+  .projeto-card {
+    flex-direction: row;
+  }
+  .card-reverse {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .card-cover {
+    width: 55%;
+  }
 }
