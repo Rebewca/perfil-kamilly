@@ -69,7 +69,7 @@ i {
   width: 3.25rem;
   height: 3.25rem;
 }
-.header-logo .logo3 {
+.header-logo .KV {
   width: 4rem;
   height: 2rem;
   margin-left: 10px;
@@ -79,7 +79,7 @@ i {
 html[data-theme="light"] .logo {
   filter: invert(1);
 }
-html[data-theme="light"] .logo3 {
+html[data-theme="light"] .KV {
   filter: invert(1);
 }
 
@@ -88,6 +88,8 @@ html[data-theme="light"] .logo3 {
   color: var(--icon-color);
   cursor: pointer; /* ali contem um link clicavel */
   transition: ease-in-out 0.4s; /* transição de icones (uma lentidão quando o elemento surgir) */
+  float: right;
+  position: relative;
 }
 .menu {
   display: flex; /* uma caixa que se adapta e diversos tamanhos, transformando todos os filhos diretos em flex itens */
@@ -262,12 +264,77 @@ html[data-theme="light"] .logo3 {
   justify-content: flex-start;
 }
 
-.sobre-perfil{ /* imagem */
+.IA-de-KV{ /* imagem */
   width: 100%;
   border-radius: 50rem;
   border: 8px solid var(--link-color); /* cor da borda */
 
 }
+.sobre-descricao {
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-start;
+  text-align: start;
+  gap: 1rem;
+
+}
+.sobre-icones{
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.sobre-icones i{
+  font-size: 1.25rem;
+}
+.sobre-content2 .col1,
+.sobre-content2 .col2 {
+ display: flex;
+ flex-direction: column;
+ text-align: justify;
+ gap: 1rem;
+}
+
+.sobre-content2 .col1 .row1,
+.sobre-content2 .col1 .row2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+/* cursos */
+.accordion-header{
+  width: 100%;
+  display: flex;
+  padding: 0.75rem;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  border: 1px solid var(--primary-border-color);
+  text-align: left; /* esquerda */
+  cursor: pointer;
+  transition: ease-in-out .3s;
+}
+.accordion-header span {
+  color: var(--title-color);
+}
+.accordion-header .start {
+  border-radius: 1rem  1rem 0rem 0rem;
+}
+.accordion-header.end,
+.accordion-item.active .accordion-body.end {
+    border-radius: 0rem 0rem 1rem 1rem;
+
+} 
+.accordion-body {
+ display: none; /*display none */
+  padding: 1.25rem;
+  flex-direction: column;
+  text-align: justify;
+  align-items: flex-start;
+  gap: 1rem;
+  border: 1px solid var(--primary-border-color);
+
+}
+
 
 /* CSS responsivo */
 @media (min-width: 768px) {
