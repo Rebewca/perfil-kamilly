@@ -324,8 +324,13 @@ html[data-theme="light"] .KV {
     border-radius: 0rem 0rem 1rem 1rem;
 
 } 
+.accordion-item.active .accordion-item.end{
+    border-radius: 0;
+}
+
+
 .accordion-body {
- display: none; /*display none */
+ /*display none */
   padding: 1.25rem;
   flex-direction: column;
   text-align: justify;
@@ -334,7 +339,13 @@ html[data-theme="light"] .KV {
   border: 1px solid var(--primary-border-color);
 
 }
-
+ .accordiont-item.active .accordion-header {
+    background: var(--secondary-bg-color);
+ } 
+ .accordion-item.active .accordion-body {
+    display: flex;
+ }
+/* rotacionar icone */
 
 /* CSS responsivo */
 @media (min-width: 768px) {
