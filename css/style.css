@@ -330,7 +330,7 @@ html[data-theme="light"] .KV {
 
 
 .accordion-body {
- /*display none */
+ display: none;
   padding: 1.25rem;
   flex-direction: column;
   text-align: justify;
