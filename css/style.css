@@ -497,7 +497,8 @@ footer p{
   padding: 10rem 12rem 2rem;
 }
 .projetos, .sobre {
-  padding: 10rem 15rem 4rem;
+  padding: 10rem 15rem 4rem
+  ;
 }
 
 }
